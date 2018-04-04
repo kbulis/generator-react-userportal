@@ -1,0 +1,25 @@
+{
+  "name": "<%= name %>",
+  "version": "0.0.1",
+  "description": "<%= description %>",
+  "author": "<%= author %>",
+  "repository": "<%= repository %>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "serve": "serve --single ./build --port 3000",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "tests": "react-scripts test --env=jsdom --coverage"
+  },
+  "devDependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "^1.1.1",
+    "semantic-ui-css": "^2.3.0",
+    "semantic-ui-react": "^0.78.2"
+  },
+  "dependencies": {
+    "serve": "^6.4.11"
+  }
+}

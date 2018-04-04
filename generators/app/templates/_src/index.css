@@ -1,0 +1,107 @@
+html, body {
+  background-color: #111;
+}
+
+.app-section {
+  background-color: #fff;
+  text-align: center;
+  padding: 32px 32px 48px 32px;
+  min-height: 480px;
+}
+
+.app-header {
+  background-color: #222;
+  height: 160px;
+  padding: 24px;
+  color: white;
+}
+
+.app-footer {
+  padding: 48px;
+  color: #777;
+}
+
+.app-footer a.button {
+  background-color: #777;
+  font-size: larger;
+  margin: 0px 8px 0px 8px;
+}
+
+.app-footer a.link {
+  margin-right: 16px;
+  color: #777;
+}
+
+.app-footer a.link:hover {
+  margin-right: 16px;
+  color: #ccc;
+}
+
+.app-footer .footer-block {
+  margin-bottom: 16px;
+}
+
+.app-footer .footer-text {
+  text-align: justify;
+}
+
+.command {
+  text-transform: uppercase !important;
+}
+
+.ui.modal {
+  margin-top: 120px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+@media (max-width: 1200px) {
+  .app-header {
+    height: 140px;
+    padding: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-header {
+    height: 120px;
+    padding: 24px;
+  }
+
+  .app-section {
+    padding: 24px;
+  }
+
+  .ui.modal {
+    margin-top: 80px !important;
+  }
+}
+
+@media (max-width: 540px) {
+  .app-header {
+    height: 100px;
+    padding: 16px;
+  }
+
+  .app-section {
+    padding: 16px;
+  }
+
+  .ui.modal {
+    margin-top: 40px !important;
+  }
+}
+
+@media print {    
+  .app-header, .app-notifications, .app-footer {
+    display: none !important;
+  }
+
+  .app-prints {
+    display: block !important;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact;
+  }
+}

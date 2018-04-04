@@ -1,0 +1,17 @@
+FROM node:carbon-alpine
+
+RUN addgroup -S app && adduser -S -G app app
+ENV HOME=/home/app
+WORKDIR $HOME/
+
+COPY package.json yarn.lock ./
+
+RUN yarn install --production
+
+COPY ./build ./build
+
+RUN chown --recursive app:app $HOME/
+USER app
+
+EXPOSE 4206
+CMD [ "yarn", "serve" ]
